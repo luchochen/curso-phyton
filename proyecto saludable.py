@@ -26,7 +26,10 @@ while horas_dormidas != "fin" :
     
     else:
         print("buen descanso")
+
+print("programa terminado")
         
 
 
         
+
