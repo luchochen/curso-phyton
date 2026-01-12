@@ -1,38 +1,40 @@
+
 # =========================
 # EJERCICIO: MAXIKIOSCO
 # =========================
 
 # 1) Diccionario del negocio (llave y valor)
 negocio = {
-    "Nombre": "Maxikiosco 24/7",
+    "Nombre": "Simpsonskiosco 24/7",
     "Servicios": "Venta de bebidas, snacks, recargas, cigarrillos",
-    "Dirección": "Av. Principal 123",
+    "Dirección": "Av. Siempreviva 742",
     "Horario": "365 días - 24 horas",
     "Contacto": "+54 341 000-0000"
 }
 
-# 2) Lista anidada (lista de tuplas) con productos y stock
-# (Teclados, Mouse, Monitores... eran ejemplo; acá lo adaptamos a kiosco)
+# 2) Lista con productos y stock
+
 productos = [
-    ("Gaseosa", 1500, 12),
-    ("Galletitas", 2500, 20),
-    ("Carbón", 3500, 0)  # <- al menos un artículo con stock 0
+    ("cerveza duff", 1500, 12),
+    ("donnuts", 2500, 20),
+    ("llavero bort", 3500, 0),
+    ("muñeca stacy malibu", 13500, 2)  
 ]
 
-# 3) Tupla de empleados (podés cambiar nombres)
-empleados = ("Ema", "Chelo", "Emi", "Jesús")
+# 3) empleados
+empleados = ("Lenny Leonard", "Carl Carlson", "Apu Nahasapeemapetilon", "Barney Gumble")
 
 # =========================
 # FUNCIONES
 # =========================
 def mostrar_bienvenida():
     print("\n" + "=" * 40)
-    print("Bienvenido al Maxikiosco más completo de la ciudad")
+    print("Bienvenido al Maxikiosco más completo de Springfield")
     print("Abrimos los 365 días - 24 horas")
     print("=" * 40)
 
 def mostrar_menu():
-    print("\nMenú de opciones:")
+    print("\n Menú de opciones:")
     print("1 - Información del negocio")
     print("2 - Nuestros productos")
     print("3 - Empleados")
@@ -57,7 +59,7 @@ def opcion_empleados():
         print(f"{i}. {emp}")
 
 # =========================
-# PROGRAMA PRINCIPAL (loop)
+# PROGRAMA PRINCIPAL 
 # =========================
 mostrar_bienvenida()
 
@@ -72,7 +74,7 @@ while True:
     elif opcion == "3":
         opcion_empleados()
     elif opcion == "4":
-        print("\nGracias por visitar el Maxikiosco. ¡Hasta luego!")
+        print("\nGracias por visitar el Simpsonskiosco. ¡Hasta luego, vuelva pronto!")
         break
     else:
         print("\nOpción inválida. Elegí 1, 2, 3 o 4.")
